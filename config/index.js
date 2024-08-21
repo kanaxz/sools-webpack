@@ -8,11 +8,8 @@ const plugins = [
 
 const { merge } = require('webpack-merge')
 
-module.exports = async (nope, argv, config) => {
-  const options = plugins.map((p) => p(argv))
-  const webpackOptions = merge(...options)
-
-  console.log(`MERGED WEBPACK CONFIG:\n ${JSON.stringify(webpackOptions, null, 4)}\n`)
-
+module.exports = async (argv, config, override) => {
+  const options = plugins.map((p) => p(override, argv))
+  const webpackOptions = merge(...options, config)
   return webpackOptions
 }

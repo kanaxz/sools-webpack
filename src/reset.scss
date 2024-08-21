@@ -1,0 +1,83 @@
+/* Reset CSS */
+
+/* Remove default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a consistent font family */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove text decorations and links color */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove borders and background for form elements */
+input, button, textarea, select {
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Make sure tables are consistent */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Make sure images scale correctly */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure headings are consistent */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* Ensure block elements stack properly */
+div, p, header, footer, section, article, aside, main, nav {
+  display: block;
+}
+
+/* Make sure forms look consistent */
+form {
+  display: block;
+}
+
+/* Ensure inline elements align correctly */
+span, strong, em {
+  display: inline;
+}
+
+/* Remove default outline on focused elements */
+*:focus {
+  outline: none;
+}
+
+/* Normalize line heights */
+body {
+  line-height: 1.5;
+}
+
+/* Ensure a consistent box model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

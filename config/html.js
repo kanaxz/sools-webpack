@@ -2,12 +2,12 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { join } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = () => {
+module.exports = ({ favicon }) => {
   return {
     plugins: [
       new HtmlWebpackPlugin({
-        template: './index.html',
-        favicon: './assets/favicon.ico',
+        template: join(__dirname, '../index.html'),
+        favicon,
       }),
       /*
         new CopyWebpackPlugin(
