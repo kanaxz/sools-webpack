@@ -7,6 +7,7 @@ module.exports = ({ favicon }) => {
     plugins: [
       new HtmlWebpackPlugin({
         template: join(__dirname, '../index.html'),
+        filename: 'index.html',
         favicon,
       }),
       /*
