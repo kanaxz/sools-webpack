@@ -7,6 +7,10 @@ body {
   overflow: hidden;
 }
 
+fieldset {
+  border: none;
+}
+
 /* Remove default margins and paddings */
 * {
   margin: 0;
