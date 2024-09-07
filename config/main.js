@@ -12,6 +12,7 @@ module.exports = (override, argv) => {
     output: {
       filename: '[name].bundle.js',
       crossOriginLoading: false,
+      publicPath: '/',
     },
     optimization: {
       minimize: false,
